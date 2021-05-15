@@ -10,13 +10,13 @@ export default {
     getDataForm: (state) => state.form,
   },
   mutations: {
-    SET_DATA_FORM({ state }, payload) {
+    SET_DATA_FORM(state, payload) {
       state.form = payload;
     },
   },
   actions: {
     setDataForm({ commit }, payload) {
-      console.log(payload);
+      console.log("chamou");
       commit("SET_DATA_FORM", payload);
     },
 
