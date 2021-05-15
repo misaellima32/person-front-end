@@ -1,7 +1,11 @@
 <template>
   <div id="actions-form">
-    <b-button @click="savePerson()"> Salvar </b-button>
-    <b-button @click="setDataForm({})">Limpar</b-button>
+    <b-button variant="outline-success" class="mr-2" @click="savePerson()">
+      Salvar
+    </b-button>
+    <b-button variant="outline-secondary" @click="clearForm()"
+      >Limpar
+    </b-button>
   </div>
 </template>
 
@@ -14,6 +18,9 @@ export default {
       savePerson: "cadastro/savePerson",
       setDataForm: "cadastro/setDataForm",
     }),
+    clearForm() {
+      this.setDataForm({});
+    },
   },
 };
 </script>
