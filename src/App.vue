@@ -1,18 +1,21 @@
 <template>
   <div id="app">
     <Header />
-    <b-card>
+    <b-container>
       <router-view />
-    </b-card>
+    </b-container>
+    <!-- <Footer /> -->
   </div>
 </template>
 
 <script>
 import Header from "../src/components/Hearder.vue";
+// import Footer from "../src/components/Footer.vue";
 
 export default {
   components: {
     Header,
+    // Footer,
   },
 };
 </script>
