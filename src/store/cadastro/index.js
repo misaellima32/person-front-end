@@ -16,7 +16,6 @@ export default {
   },
   actions: {
     setDataForm({ commit }, payload) {
-      console.log("chamou");
       commit("SET_DATA_FORM", payload);
     },
 
@@ -24,10 +23,10 @@ export default {
       axiosIns
         .post("/people", state.form)
         .then((res) => {
-          state.responseMessage = res.data.message;
+          state.responseMessage = res.status;
         })
-        .catch((res) => {
-          state.responseMessage = res.data.message;
+        .catch((error) => {
+          state.responseMessage = error.message;
         });
     },
   },
