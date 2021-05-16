@@ -1,5 +1,6 @@
 const { stringify, parse } = JSON;
 
+// em caso de uso da localStorage
 export const setStorage = (key, value, { format } = {}) => {
   if (!window) return;
   window.localStorage.setItem(key, format ? stringify(value) : value);
