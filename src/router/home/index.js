@@ -3,6 +3,6 @@ export default [
     path: "/",
     name: "Home",
     component: () =>
-      import(/* webpackChunkName: "cadastro" */ "../../views/Home.vue"),
+      import(/* webpackChunkName: "home" */ "../../views/Home.vue"),
   },
 ];
