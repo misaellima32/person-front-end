@@ -4,7 +4,7 @@ export default [
     name: "Gerenciamento",
     component: () =>
       import(
-        /* webpackChunkName: "cadastro" */ "../../views/Gerenciamento.vue"
+        /* webpackChunkName: "gerenciamento" */ "../../views/Gerenciamento.vue"
       ),
   },
 ];

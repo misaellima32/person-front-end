@@ -1,9 +1,16 @@
 <template>
-  <div id="management">Gerenciamento</div>
+  <div id="gerenciamento">
+    <Table />
+  </div>
 </template>
 
 <script>
-export default {};
+import Table from "../modules/gerenciamento/Table.vue";
+export default {
+  components: {
+    Table,
+  },
+};
 </script>
 
 <style></style>
